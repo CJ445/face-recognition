@@ -6,7 +6,7 @@ This Python application uses OpenCV for face detection and recognition. It allow
 
 ## Features
 - 'Face Registration': Capture 50 images of a person's face for registration. Images are saved with the person's name and an image number.
-- 'Face Recognition': Real-time recognition of registered faces using template matching based on OpenCV's cv2.matchTemplate() function.
+- 'Face Recognition': Real-time recognition of registered faces using template matching based on OpenCV's `cv2.matchTemplate()` function.
 - 'Graphical User Interface (GUI)': Basic tkinter GUI for user interaction, providing options to register faces and recognize registered faces.
 
 ## Prerequisites
@@ -39,23 +39,23 @@ face_recognition_project/
 ## Usage
 
 ### Registering Faces
-- Run 'register_faces.py'.
+- Run `register_faces.py`.
 - Enter the name of the person you want to register.
 - The application will capture 50 images of the person's face.
 - Images will be saved in the data directory under a folder named after the person.
 
 ### Recognizing Faces
-- After registering faces for multiple persons, run 'recognize_faces.py'.
+- After registering faces for multiple persons, run `recognize_faces.py`.
 - The application will use the webcam feed to detect and recognize registered faces.
 - Detected faces will be labeled with the corresponding person's name if recognized.
 
 ### Graphical User Interface (GUI)
-- Run 'face_recognition_gui.py' for a tkinter GUI interface.
+- Run `face_recognition_gui.py` for a tkinter GUI interface.
 - Use buttons to register faces or recognize faces.
 
 ## Notes
-- Ensure the 'haarcascade_frontalface_default.xml' file is located in the haarcascades directory for face detection.
-- Adjust recognition thresholds and methods (cv2.matchTemplate() parameters) based on your specific requirements for accuracy and performance.
+- Ensure the `haarcascade_frontalface_default.xml` file is located in the haarcascades directory for face detection.
+- Adjust recognition thresholds and methods (`cv2.matchTemplate()` parameters) based on your specific requirements for accuracy and performance.
 
 # haarcascade_frontalface_default.xml
 
@@ -86,7 +86,7 @@ In this application, `haarcascade_frontalface_default.xml` is used to detect fac
 face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 ```
 
-2. **Detecting Faces**: The 'detectMultiScale()' method is used to detect faces in the input image. This method returns a list of rectangles, where each rectangle corresponds to a detected face.
+2. **Detecting Faces**: `The detectMultiScale()` method is used to detect faces in the input image. This method returns a list of rectangles, where each rectangle corresponds to a detected face.
 ```
 gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5)
@@ -103,10 +103,10 @@ for (x, y, w, h) in faces:
 face_region = gray[y:y+h, x:x+w]
 ```
 
-### Importance of haarcascade_frontalface_default.xml
+### Importance of `haarcascade_frontalface_default.xml`
 - Efficiency: Haar Cascades provide a very efficient method for face detection, allowing real-time detection in video streams.
-- Pre-trained: The haarcascade_frontalface_default.xml file is pre-trained, which means it can be used out-of-the-box without the need for additional training.
+- Pre-trained: The `haarcascade_frontalface_default.xml` file is pre-trained, which means it can be used out-of-the-box without the need for additional training.
 - Robustness: Although newer methods like deep learning-based detectors are becoming more popular, Haar Cascades are still robust and effective for many applications.
 
 ## Conclusion
-The 'haarcascade_frontalface_default.xml' file is a crucial part of this face recognition application, providing the ability to detect faces quickly and accurately. Understanding its role and how it works can help in effectively implementing and troubleshooting face detection tasks in computer vision projects.
+The `haarcascade_frontalface_default.xml` file is a crucial part of this face recognition application, providing the ability to detect faces quickly and accurately. Understanding its role and how it works can help in effectively implementing and troubleshooting face detection tasks in computer vision projects.
