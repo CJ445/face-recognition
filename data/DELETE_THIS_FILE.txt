@@ -1,1 +1,0 @@
-Delete this file and leave the empty repository. This is where the registered faces will be stored.
