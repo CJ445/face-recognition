@@ -21,6 +21,12 @@ Install the required Python libraries using pip:
 pip install opencv-python numpy Pillow tkinter
 ```
 
+## Run the program
+Enter the project directory. Ensure you have deleted the text file inside the data/ directory.
+```
+python face_recognition_gui.py
+```
+
 ## Project Structure
 ```
 face_recognition_project/
