@@ -1,6 +1,3 @@
-#### Note
-**Delete the text file inside the directory called 'data' after cloning the project repository.**
-
 # Face Recognition Application
 This Python application uses OpenCV for face detection and recognition. It allows users to register faces by capturing multiple images per person and then recognizes registered faces in real-time using a webcam feed.
 
@@ -22,7 +19,7 @@ pip install opencv-python numpy Pillow tkinter
 ```
 
 ## Run the program
-Enter the project directory. Ensure you have deleted the text file inside the data/ directory.
+Enter the project directory and execute the command below.
 ```
 python face_recognition_gui.py
 ```
@@ -34,7 +31,7 @@ face_recognition_project/
 ├── haarcascades/          # Folder for storing Haar cascade XML files
 │   └── haarcascade_frontalface_default.xml
 │
-├── data/                  # Folder to store registered face images
+├── data/                  # Folder to store registered face images 
 │
 ├── register_faces.py      # Script to register faces by capturing images
 ├── recognize_faces.py     # Script to recognize registered faces in real-time
