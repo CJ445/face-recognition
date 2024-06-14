@@ -1,3 +1,6 @@
+#### Note
+**Delete the text file inside the directory called 'data' after cloning the project repository.**
+
 # Face Recognition Application
 This Python application uses OpenCV for face detection and recognition. It allows users to register faces by capturing multiple images per person and then recognizes registered faces in real-time using a webcam feed.
 
