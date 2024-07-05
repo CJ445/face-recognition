@@ -113,3 +113,9 @@ face_region = gray[y:y+h, x:x+w]
 
 ## Conclusion
 The `haarcascade_frontalface_default.xml` file is a crucial part of this face recognition application, providing the ability to detect faces quickly and accurately. Understanding its role and how it works can help in effectively implementing and troubleshooting face detection tasks in computer vision projects.
+
+## Demo Output
+https://github.com/CJ445/face-recognition/assets/131938772/e7bccac7-c695-432a-9248-8b27352986a0
+
+
+
