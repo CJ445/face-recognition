@@ -1,6 +1,9 @@
 # Face Recognition Application
 This Python application uses OpenCV for face detection and recognition. It allows users to register faces by capturing multiple images per person and then recognizes registered faces in real-time using a webcam feed.
 
+## Demo Output
+https://github.com/CJ445/face-recognition/assets/131938772/e7bccac7-c695-432a-9248-8b27352986a0
+
 ## Features
 - 'Face Registration': Capture 50 images of a person's face for registration. Images are saved with the person's name and an image number.
 - 'Face Recognition': Real-time recognition of registered faces using template matching based on OpenCV's `cv2.matchTemplate()` function.
@@ -114,8 +117,7 @@ face_region = gray[y:y+h, x:x+w]
 ## Conclusion
 The `haarcascade_frontalface_default.xml` file is a crucial part of this face recognition application, providing the ability to detect faces quickly and accurately. Understanding its role and how it works can help in effectively implementing and troubleshooting face detection tasks in computer vision projects.
 
-## Demo Output
-https://github.com/CJ445/face-recognition/assets/131938772/e7bccac7-c695-432a-9248-8b27352986a0
+
 
 
 
